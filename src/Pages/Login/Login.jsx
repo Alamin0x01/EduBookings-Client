@@ -5,9 +5,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import SocialLogin from "../Shared/SocialLogin";
+import Lottie from "lottie-react";
+import login from "../../assets/login.json";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
-  const { loginUser } = useAuth();
+  const { loginUser, resetPassword } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -47,10 +50,45 @@ const Login = () => {
       });
   };
 
+  const handleForgetPassword = () => {
+    Swal.fire({
+      title: "Enter your email address",
+      input: "email",
+      inputPlaceholder: "Enter your email address",
+      showCancelButton: true,
+      confirmButtonText: "Send",
+      showLoaderOnConfirm: true,
+      preConfirm: (email) => {
+        return resetPassword(email)
+          .then((result) => {
+            console.log(result);
+            Swal.fire({
+              icon: "success",
+              title: "Password reset email sent",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          })
+          .catch((error) => {
+            console.log(error.message);
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: error.message,
+            });
+          });
+      },
+      allowOutsideClick: () => !Swal.isLoading(),
+    });
+  };
+
   return (
     <div>
+      <Helmet>
+        <title>Login | Campus Books</title>
+      </Helmet>
       <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse justify-evenly">
+        <div className="hero-content flex-col-reverse lg:flex-row-reverse justify-evenly">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
@@ -101,10 +139,22 @@ const Login = () => {
                 />
               </div>
             </form>
+            <button
+              onClick={() => handleForgetPassword()}
+              className="link link-hover text-center text-primary"
+            >
+              Forget Password?
+            </button>
             <p className="p-5 text-center">
-              New Here? <Link to="/register">Create an account</Link>{" "}
+              New Here?{" "}
+              <span className="text-primary">
+                <Link to="/register">Create an account</Link>
+              </span>{" "}
             </p>
             <SocialLogin></SocialLogin>
+          </div>
+          <div>
+            <Lottie animationData={login} loop={true}></Lottie>
           </div>
         </div>
       </div>
