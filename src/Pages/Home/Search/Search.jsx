@@ -34,7 +34,7 @@ const Search = () => {
             {...register("search")}
             type="text"
             placeholder="Search"
-            className="w-4/6 border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
+            className="w-96 ml-60 border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
           />
           <input
             type="submit"
