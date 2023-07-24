@@ -146,10 +146,10 @@ const Login = () => {
               Forget Password?
             </button>
             <p className="p-5 text-center">
-              New Here?{" "}
+              New Here?
               <span className="text-primary">
                 <Link to="/register">Create an account</Link>
-              </span>{" "}
+              </span>
             </p>
             <SocialLogin></SocialLogin>
           </div>

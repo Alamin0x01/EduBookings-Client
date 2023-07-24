@@ -66,6 +66,7 @@ const MyCollege = () => {
       <Helmet>
         <title>My College | Campus Books</title>
       </Helmet>
+
       <SectionTitle title="My College" />
       <div className="overflow-x-auto">
         <table className="table">
