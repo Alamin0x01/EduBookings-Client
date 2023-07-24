@@ -48,7 +48,7 @@ const UpdateProfile = () => {
     <>
       {!isEditMode ? (
         <div>
-          {/* <h1 className="text-2xl font-bold">Name: {dbUser.name}</h1> */}
+          <h1 className="text-2xl font-bold">Name: {dbUser.name}</h1>
           <h1 className="text-2xl font-bold">Email: {dbUser.email}</h1>
           <h1 className="text-2xl font-bold">Phone: {dbUser.phone}</h1>
           <h1 className="text-2xl font-bold">Address: {dbUser.address}</h1>
