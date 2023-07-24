@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div>
       <Helmet>
-        <title>Profile | Campus Books</title>
+        <title>Profile | EduBookings</title>
       </Helmet>
       <SectionTitle title="Profile" />
       {dbUserLoading ? (

@@ -25,7 +25,7 @@ const Colleges = () => {
   return (
     <div>
       <Helmet>
-        <title>Colleges | Campus Books</title>
+        <title>Colleges | EduBookings</title>
       </Helmet>
       <SectionTitle title="Colleges" />
       {isLoading ? (

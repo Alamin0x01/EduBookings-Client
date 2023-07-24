@@ -11,7 +11,7 @@ const Footer = () => {
     //   <div>
     //     <img className="w-36" src={logo} alt="" />
     //     <br />
-    //     <p className="font-bold">©Campus Books 2023</p>
+    //     <p className="font-bold">©EduBookings 2023</p>
     //   </div>
     //   <div>
     //     <span className="footer-title">Links</span>

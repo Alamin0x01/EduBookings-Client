@@ -25,7 +25,7 @@ const Admission = () => {
   return (
     <div>
       <Helmet>
-        <title>Admission | Campus Books</title>
+        <title>Admission | EduBookings</title>
       </Helmet>
       <SectionTitle title="Admission" />
       <div className="overflow-x-auto">

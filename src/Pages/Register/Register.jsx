@@ -62,7 +62,7 @@ const Register = () => {
   return (
     <div className="hero">
       <Helmet>
-        <title>Register | Campus Books</title>
+        <title>Register | EduBookings</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse justify-evenly">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

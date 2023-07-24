@@ -8,7 +8,7 @@ const ErrorPage = () => {
   return (
     <>
       <Helmet>
-        <title>Error | Campus Books</title>
+        <title>Error | EduBookings</title>
       </Helmet>
       <section className="flex">
         <div className="container flex flex-col items-center justify-center">

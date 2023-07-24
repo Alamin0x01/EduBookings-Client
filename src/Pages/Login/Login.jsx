@@ -85,7 +85,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title>Login | Campus Books</title>
+        <title>Login | EduBookings</title>
       </Helmet>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse justify-evenly">

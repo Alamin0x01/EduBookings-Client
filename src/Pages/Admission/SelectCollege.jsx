@@ -47,7 +47,7 @@ const SelectCollege = () => {
   return (
     <div>
       <Helmet>
-        <title>Select College | Campus Books</title>
+        <title>Select College | EduBookings</title>
       </Helmet>
 
       <SectionTitle title="Select College" />

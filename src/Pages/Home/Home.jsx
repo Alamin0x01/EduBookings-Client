@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title> Campus Books</title>
+        <title> EduBookings</title>
       </Helmet>
       <Search />
       <PopularColleges />

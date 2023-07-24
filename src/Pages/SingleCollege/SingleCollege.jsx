@@ -18,7 +18,7 @@ const SingleCollege = () => {
   return (
     <div>
       <Helmet>
-        <title>{college_name} | Campus Books</title>
+        <title>{college_name} | EduBookings</title>
       </Helmet>
       <div>
         <div className="mockup-window border bg-base-300">
