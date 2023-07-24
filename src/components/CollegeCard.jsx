@@ -23,7 +23,7 @@ const CollegeCard = ({ college }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{college_name}</h2>
+          <h2 className="card-title font-bold">{college_name}</h2>
           <div>
             <p className="text-lg">Admission Date: {admission_date}</p>
             <p className="text-lg">Research Published: {research_count}</p>
@@ -31,24 +31,24 @@ const CollegeCard = ({ college }) => {
           </div>
           <div className="flex justify-between">
             <div>
-              <p className="text-lg text-primary">Events</p>
+              <p className="text-lg text-primary font-bold">Events</p>
               <ul className="list-disc">
                 {events.map((event, index) => (
-                  <li key={index} className="text-lg">
+                  <div key={index} className="text-lg">
                     {event}
-                  </li>
+                  </div>
                 ))}
               </ul>
             </div>
             <div>
-              <p className="text-lg text-primary">Sports</p>
-              <ul className="list-disc">
+              <p className="text-lg text-primary font-bold">Sports</p>
+              <div className="list-disc">
                 {sports.map((sport, index) => (
-                  <li key={index} className="text-lg">
+                  <div key={index} className="text-lg">
                     {sport}
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
           <div className="card-actions justify-center">
