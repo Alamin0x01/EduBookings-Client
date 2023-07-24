@@ -22,13 +22,16 @@ const router = createBrowserRouter([
       {
         path: "/colleges",
         element: <Colleges />,
-        loader: () => fetch("http://localhost:5000/colleges/total"),
+        loader: () =>
+          fetch("https://edu-bookings-server-eta.vercel.app/colleges/total"),
       },
       {
         path: "/college/:id",
         element: <SingleCollege />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/college/${params.id}`),
+          fetch(
+            `https://edu-bookings-server-eta.vercel.app/college/${params.id}`
+          ),
       },
       {
         path: "/admission",
@@ -46,7 +49,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/college/${params.id}`),
+          fetch(
+            `https://edu-bookings-server-eta.vercel.app/college/${params.id}`
+          ),
       },
       {
         path: "/mycollege",

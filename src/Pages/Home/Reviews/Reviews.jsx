@@ -6,7 +6,9 @@ const Reviews = () => {
   const { data: reviews, isLoading } = useQuery({
     queryKey: ["reviews"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:5000/reviews");
+      const response = await fetch(
+        "https://edu-bookings-server-eta.vercel.app/reviews"
+      );
       return response.json();
     },
   });

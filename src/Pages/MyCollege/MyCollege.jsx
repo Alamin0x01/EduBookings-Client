@@ -30,7 +30,7 @@ const MyCollege = () => {
           reviewer_name: user.displayName,
           reviewer_email: user.email,
         };
-        fetch(`http://localhost:5000/review/${id}`, {
+        fetch(`https://edu-bookings-server-eta.vercel.app/review/${id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

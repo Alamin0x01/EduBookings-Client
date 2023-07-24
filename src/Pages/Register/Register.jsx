@@ -34,7 +34,7 @@ const Register = () => {
           console.log(result);
           updateUserProfile(name, photo).then(() => {
             const savedUser = { name, email, photo };
-            fetch("http://localhost:5000/adduser", {
+            fetch("https://edu-bookings-server-eta.vercel.app/adduser", {
               method: "POST",
               headers: { "content-type": "application/json" },
               body: JSON.stringify(savedUser),

@@ -5,7 +5,9 @@ const Research = () => {
   const { data: researches, isLoading } = useQuery({
     queryKey: ["research"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:5000/research");
+      const response = await fetch(
+        "https://edu-bookings-server-eta.vercel.app/research"
+      );
       const data = await response.json();
       return data;
     },

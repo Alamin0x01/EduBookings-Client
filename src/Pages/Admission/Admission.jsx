@@ -8,7 +8,9 @@ const Admission = () => {
   const { data: colleges, isLoading } = useQuery({
     queryKey: ["colleges"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:5000/colleges");
+      const response = await fetch(
+        "https://edu-bookings-server-eta.vercel.app/colleges"
+      );
       return response.json();
     },
   });
