@@ -39,7 +39,7 @@ const Search = () => {
           <input
             type="submit"
             value="Search"
-            className="btn bg-blue-500 hover:bg-blue-600 text-white font-bold rounded w-1/5"
+            className="btn bg-green-400 hover:bg-green-800 text-white font-bold rounded w-1/5"
           />
         </div>
       </form>

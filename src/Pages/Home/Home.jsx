@@ -12,9 +12,9 @@ const Home = () => {
         <title> Campus Books</title>
       </Helmet>
       <Search />
-      <Gallery />
       <PopularColleges />
       <Research />
+      <Gallery />
       <Reviews />
     </div>
   );
