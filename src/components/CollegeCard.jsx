@@ -23,7 +23,7 @@ const CollegeCard = ({ college }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">College Name: {college_name}</h2>
+          <h2 className="card-title">{college_name}</h2>
           <div>
             <p className="text-lg">Admission Date: {admission_date}</p>
             <p className="text-lg">Research Published: {research_count}</p>
