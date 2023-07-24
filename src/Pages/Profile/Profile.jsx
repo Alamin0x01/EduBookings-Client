@@ -28,7 +28,7 @@ const Profile = () => {
                   ? user.photoURL
                   : "https://i.ibb.co/cLRwPXz/profile.png "
               }
-              alt=""
+              alt="."
             />
           </div>
           <UpdateProfile />

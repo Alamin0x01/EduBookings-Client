@@ -14,7 +14,6 @@ const UpdateProfile = () => {
   //   console.log(user);
 
   const [axiosSecure] = useAxiosSecure();
-
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
     try {

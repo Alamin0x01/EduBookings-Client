@@ -12,7 +12,6 @@ const Register = () => {
   const { createUser, updateUserProfile } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState(null);
-
   const {
     register,
     handleSubmit,
