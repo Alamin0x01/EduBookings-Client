@@ -12,7 +12,6 @@ const SingleCollege = () => {
     reviews,
     sports,
   } = college;
-
   const totalRatings = reviews.reduce((sum, review) => sum + review.rating, 0);
   const averageRating = totalRatings / reviews.length;
 
