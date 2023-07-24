@@ -76,7 +76,11 @@ const NavBar = () => {
           </ul>
         </div>
         <Link to="/" className="navbar-brand hidden md:block">
-          <img className="w-36 rounded-md" src="/logo.png" alt="" />
+          <img
+            className="w-20 h-14 rounded-md"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQajLFt8gaA8aWm37mE2k9W41H9XQI1ipyyyZO5XvzqYiLZDh4I4jUMCuBw-kf5moGnKDA&usqp=CAU"
+            alt=""
+          />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex items-center">
